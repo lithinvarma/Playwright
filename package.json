@@ -1,0 +1,27 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bs_web": "npx playwright test --config=configuration/browserstack/bs_playwright.config.js",
+    "web": "npx playwright test --config=configuration/local/playwright.config.js",
+    "testReports": "npx playwright show-report testReports"
+  },
+  "keywords": [],
+  "author": "Lithin Mudduluru",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "node": "16.15.0"
+  },
+  "devDependencies": {
+    "axios": "^1.3.5",
+    "@playwright/test": "^1.26",
+    "browserstack-local": "^1.4.5",
+    "chromedriver": "^106.0.1",
+    "mysql2": "^2.3.3",
+    "require": "^2.4.20",
+    "ssh2": "^1.11.0"
+  }
+}
